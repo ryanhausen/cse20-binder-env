@@ -1,0 +1,3 @@
+#!/bin/bash
+
+python -c "import json; import os; p = os.path.join(os.environ['HOME'], '.jupyter/nbconfig/notebook.json'); j = json.load(open(p, 'r')); j['Cell']['cm_config']['lineNumbers'] = True; json.dump(j, open(p, 'w'));" 
